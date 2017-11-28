@@ -1,4 +1,0 @@
-class Ecosystem
-  def
-
-  end
