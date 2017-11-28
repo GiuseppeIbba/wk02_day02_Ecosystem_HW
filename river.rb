@@ -14,10 +14,10 @@ class River
     def fish_count()
       return @fishes.length()
     end
-    #
-    # def lose_fish(fish)
-    #   return @fishes.pop(fish)
-    # end
+
+    def add_fish(fish)
+      @fishes << fish
+    end
 
 
 
