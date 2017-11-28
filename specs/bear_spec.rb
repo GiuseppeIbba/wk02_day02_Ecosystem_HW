@@ -14,4 +14,9 @@ def test_bear_has_a_name()
   assert_equal("Yogi", @bear.name())
 end
 
+
+def test_roar()
+  assert_equal("Roar", @bear.roar())
+end
+
 end

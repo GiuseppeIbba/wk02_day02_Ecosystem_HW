@@ -12,5 +12,8 @@ class Bear
          @bear.name()
       end
 
+      def roar()
+        return "Roar"
+      end
 
   end
