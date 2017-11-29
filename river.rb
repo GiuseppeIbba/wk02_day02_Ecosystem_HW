@@ -20,6 +20,12 @@ class River
     end
 
 
+    def remove_fish(fish)
+      @fishes.shift
+    end
+
+
+
 
 
 
