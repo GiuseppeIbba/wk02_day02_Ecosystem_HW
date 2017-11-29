@@ -15,7 +15,7 @@ class TestRiver < MiniTest::Test
     @fish3 = Fish.new("Flipper")
     @fish2 = Fish.new("Akuma")
     @fish1 = Fish.new("Screech")
-    @river = River.new("Amazon", [@fish1, @fish2, @fish3, @fish4, @fish5, @fish6, @fish7, @fish8, @fish9])
+    @river = River.new("Amazon", [@fish1, @fish2, @fish3])
   end
 
   def test_river_has_a_name()
@@ -23,9 +23,17 @@ class TestRiver < MiniTest::Test
   end
 
   def test_add_fish()
-    @river.add_fish(@fish1)
-    assert_equal(10, @river.fish_count())
+    @river.add_fish(@fish4)
+    assert_equal(4, @river.fish_count())
   end
+
+  def test_add_three_fishes()
+    @river.add_fish(@fish4)
+    @river.add_fish(@fish5)
+    @river.add_fish(@fish6)
+    assert_equal(6, @river.fish_count())
+  end
+
 
 
 
